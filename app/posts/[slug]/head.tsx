@@ -1,4 +1,4 @@
-import BlogMeta from 'components/BlogMeta'
+import BlogMeta from 'components/meta/BlogMeta'
 import * as demo from 'lib/demo.data'
 import { getPostBySlug, getSettings } from 'lib/sanity.client'
 import { urlForImage } from 'lib/sanity.image'

@@ -27,11 +27,11 @@
 
 // // FIXME: remove the `revalidate` export below once you've followed the instructions in `/pages/api/revalidate.ts`
 // export const revalidate = 1
-
+' use client'
 export default function Home() {
   return (
-    <div>
-      <div> Hello World</div>
+    <div className="md:container md:mx-auto">
+      <div> Hello World from your hero</div>
     </div>
   )
 }

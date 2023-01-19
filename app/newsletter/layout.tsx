@@ -1,18 +1,4 @@
-'use client'
-import 'tailwindcss/tailwind.css'
-
-// import RenderResults from 'components/cmd/kbar-results'
 import Navbar from 'components/navbar'
-// import {
-//   KBarAnimator,
-//   KBarPortal,
-//   KBarPositioner,
-//   KBarProvider,
-//   KBarResults,
-//   KBarSearch,
-//   NO_GROUP,
-//   useMatches,
-// } from 'kbar'
 
 export default function RootLayout({
   children,

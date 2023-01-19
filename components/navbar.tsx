@@ -1,12 +1,15 @@
+'use client'
 import { IconCommand } from '@tabler/icons'
 import Head from 'next/head'
 import Link from 'next/link'
-import { useState } from 'react'
 
-import CommandMenu from './cmd/cmd-palette'
+// import { useState } from 'react'
+import CommandMenu from './cmd/cmd-palette-cmdk'
+import CmdPaletteUI from './cmd/cmd-palette-headlessui'
+import CommandExample from './cmd-pallete'
 
 export default function Navbar() {
-  const [navbar, setNavbar] = useState(false)
+  // const [navbar, setNavbar] = useState(false)
   return (
     <div className="max-w-screen-xl px-4 py-6 mx-auto border border-cyan sm:py-12 sm:px-6 lg:px-8">
       <div className=" md:container md:mx-auto">
@@ -32,10 +35,12 @@ export default function Navbar() {
                 <Link href={'/newsletter'}>Newsletter</Link>
               </li>
             </ul>
-            <button>
+            {/* <button>
               <IconCommand onClick={() => {}} />
               <CommandMenu />
-            </button>
+              <CmdPaletteUI />
+            </button> */}
+            <CommandExample />
           </div>
         </div>
       </div>

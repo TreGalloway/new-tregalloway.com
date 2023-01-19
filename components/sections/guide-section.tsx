@@ -108,7 +108,7 @@ export default function Guides() {
           <div className="mt-12 text-center">
             <a
               href="#"
-              className="inline-flex items-center px-8 py-3 mt-8 text-black border rounded border-sky-600 bg-sky-600 hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
+              className="inline-flex items-center px-8 py-3 mt-8 text-black border rounded border-sky-500 bg-sky-500 hover:bg-transparent focus:outline-none focus:ring active:text-sky-500"
             >
               <span className="text-sm font-medium text-white">
                 Get Started

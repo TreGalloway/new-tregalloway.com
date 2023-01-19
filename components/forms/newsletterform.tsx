@@ -68,7 +68,7 @@ export default function NewsletterForm() {
                   type="submit"
                   className="inline-flex items-center justify-center w-full px-5 py-3 rounded-lg sm:w-auto"
                 >
-                  <div className="flex items-center w-auto h-auto px-4 py-2 border rounded-md border-sky-500 bg-sky-500 hover:bg-transparent focus:outline-none focus:ring">
+                  <div className="flex items-center w-auto h-auto px-4 py-2 text-white border rounded-md border-sky-500 bg-sky-500 hover:bg-transparent hover:text-black focus:outline-none focus:ring">
                     <span className="font-medium"> Subscribe </span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

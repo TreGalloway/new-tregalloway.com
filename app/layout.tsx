@@ -25,9 +25,9 @@ export default function RootLayout({
       <head />
       <div>
         <div className=" className md:container md:mx-auto">
-          <body className=" dark:bg-zinc-900 dark:text-white">
+          <body className="">
             <Navbar />
-            {children}
+            <div className="dark:bg-zinc-900 dark:text-white"> {children}</div>
           </body>
         </div>
       </div>

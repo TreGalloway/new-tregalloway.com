@@ -6,39 +6,61 @@ import Link from 'next/link'
 import CommandExample from './cmd-pallete'
 
 export default function Navbar() {
-  // const [navbar, setNavbar] = useState(false)
   return (
-    <div className="max-w-screen-xl px-4 py-6 mx-auto sm:py-12 sm:px-6 lg:px-8">
-      <div className=" md:container md:mx-auto">
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <div className="text-center sm:text-left">
-            <h1 className="text-2xl font-bold sm:text-3xl">Tre.</h1>
+    <header
+      aria-label="tregalloway.com"
+      className="dark:bg-zinc-900 dark:text-white"
+    >
+      <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8 ">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex-1 md:flex md:items-center md:gap-12">
+            <Link className="block" href="/">
+              <h1 className="text-2xl font-bold sm:text-3xl ">Tre.</h1>
+            </Link>
           </div>
 
-          <div className="flex flex-col gap-4 mt-4 sm:mt-0 sm:flex-row sm:items-center">
-            <ul className="flex items-center justify-center font-semibold">
-              <li className="px-4 ">
-                <Link href={'/'}>Home</Link>
-              </li>
-              <li className="px-4 ">
-                <Link href={'/blog'}>Articles</Link>
-              </li>
-              <li className="px-4 ">
-                <Link href={'/tech'}>Tech</Link>
-              </li>
-              <li className="px-4 ">
-                <Link href={'/newsletter'}>Newsletter</Link>
-              </li>
-            </ul>
-            {/* <button>
-              <IconCommand onClick={() => {}} />
-              <CommandMenu />
-              <CmdPaletteUI />
-            </button> */}
-            <CommandExample />
+          <div className=" md:flex md:items-center md:gap-12">
+            <nav aria-label="Site Nav" className="hidden md:block">
+              <ul className="flex items-center gap-6 text-md">
+                <li>
+                  <a className="transition hover:text-sky-300/75" href="/">
+                    Home
+                  </a>
+                </li>
+
+                <li>
+                  <a className="transition hover:text-sky-300/75" href="/blog">
+                    Blog
+                  </a>
+                </li>
+
+                <li>
+                  <a className="transition hover:text-sky-300/75" href="/tech">
+                    Tech
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    className="transition hover:text-sky-300/75"
+                    href="/newsletter"
+                  >
+                    Newsletter
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div className="flex items-center gap-4">
+              <div className="block ">
+                <button className=" hover:text-sky-200">
+                  <CommandExample />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </header>
   )
 }

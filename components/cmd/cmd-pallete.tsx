@@ -1,3 +1,4 @@
+'use client'
 import {
   IconArticle,
   IconCommand,
@@ -86,11 +87,12 @@ const CommandExample = () => {
   return (
     <>
       <button
-        className="p-2 transition-colors duration-100 rounded-full hover:bg-gray-100 dark:hover:bg-neutral-800"
+        className="p-2 transition-colors duration-100 dark:hover:bg-neutral-800"
         onClick={() => setOpen(!open)}
       >
         <IconCommand />
       </button>
+
       <Command
         open={open}
         onClose={() => setOpen(false)}
@@ -100,21 +102,21 @@ const CommandExample = () => {
         commandFunction={() => {
           setOpen(false)
         }}
-        overlayClassName="bg-gray-300/60 dark:bg-zinc-900/60 fixed inset-0 overflow-y-auto  p-4 pt-[25vh] transition-opacity"
-        className=" bg-slate-50/30 dark:bg-zinc-800"
+        overlayClassName=" "
+        // className="bg-white border border-neutral-300 dark:border-neutral-800 dark:bg-zinc-900 dark:ring-zinc-900/5"
       >
         <CommandInput
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
             setQuery(e.target.value)
           }}
-          inputClassName="border-0 "
         />
         <CommandList>
           {filteredData.map((example) => (
             <CommandOption
               key={example.id}
               value={example.action}
-              activeClassName="bg-gray-100 dark:bg-zinc-700/25"
+              activeClassName="bg-gray-300 dark:bg-zinc-700/25"
+              className=" text-zinc-700"
             >
               <div className="flex items-center justify-between py-1 space-x-1">
                 <div className="flex items-center space-x-1">

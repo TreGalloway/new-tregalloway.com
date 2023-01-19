@@ -23,14 +23,14 @@ export default function NewsletterForm() {
             </div>
           </div>
 
-          <div className="p-8 bg-white rounded-lg shadow-xl ring-1 ring-black/10 lg:col-span-3 lg:p-12">
+          <div className="p-8 rounded-lg shadow-xl ring-1 ring-black/10 dark:bg-zinc-800/30 dark:shadow-sky-500/40 lg:col-span-3 lg:p-12">
             <form action="" className="space-y-4">
               <div>
-                <label className="sr-only" htmlFor="name">
+                <label className="sr-only " htmlFor="name">
                   Name
                 </label>
                 <input
-                  className="w-full p-3 text-sm border-gray-200 rounded-lg"
+                  className="w-full p-3 text-sm border-gray-200 rounded-lg dark:bg-zinc-800 "
                   placeholder="@Name"
                   type="text"
                   id="name"
@@ -43,7 +43,7 @@ export default function NewsletterForm() {
                     Email
                   </label>
                   <input
-                    className="w-full p-3 text-sm border-gray-200 rounded-lg"
+                    className="w-full p-3 text-sm border-gray-200 rounded-lg dark:bg-zinc-800"
                     placeholder="@Email address"
                     type="email"
                     id="email"
@@ -51,7 +51,7 @@ export default function NewsletterForm() {
                 </div>
               </div>
 
-              <div>
+              {/* <div>
                 <label className="sr-only" htmlFor="message">
                   Message
                 </label>
@@ -61,12 +61,12 @@ export default function NewsletterForm() {
                   rows="6"
                   id="message"
                 ></textarea>
-              </div>
+              </div> */}
 
               <div className="mt-4">
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center w-full px-5 py-3 text-white rounded-lg bg-sky-600 sm:w-auto"
+                  className="inline-flex items-center justify-center w-full px-5 py-3 rounded-lg bg-sky-400 dark:bg-sky-600 sm:w-auto"
                 >
                   <span className="font-medium"> Subscribe </span>
 

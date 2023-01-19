@@ -100,14 +100,14 @@ const CommandExample = () => {
         commandFunction={() => {
           setOpen(false)
         }}
-        overlayClassName="bg-gray-300/60 dark:bg-zinc-900/60"
-        className="p-5 bg-slate-50 ring-1 ring-black/10"
+        overlayClassName="bg-gray-300/60 dark:bg-zinc-900/60 fixed inset-0 overflow-y-auto  p-4 pt-[25vh] transition-opacity"
+        className="p-5 bg-slate-50 ring-1 ring-black/10 dark:bg-slate-900"
       >
         <CommandInput
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
             setQuery(e.target.value)
           }}
-          inputClassName="outline-0 "
+          inputClassName="border-0 "
         />
         <CommandList>
           {filteredData.map((example) => (

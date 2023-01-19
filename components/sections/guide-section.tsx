@@ -8,7 +8,7 @@ export default function Guides() {
               Kickstart your marketing
             </h2>
 
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-gray-600 dark:text-slate-300">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Consequuntur aliquam doloribus nesciunt eos fugiat. Vitae aperiam
               fugit consequuntur saepe laborum.
@@ -17,7 +17,7 @@ export default function Guides() {
 
           <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-1 lg:grid-cols-3">
             <a
-              className="block p-8 transition border shadow-xl rounded-xl border-black/10 hover:border-pink-500/10 hover:shadow-sky-500/30"
+              className="block p-8 transition border shadow-xl rounded-xl border-black/10 hover:border-pink-500/10 hover:shadow-sky-500/30 dark:bg-zinc-800/30 dark:shadow-slate-200/30"
               href="/services/digital-campaigns"
             >
               <svg
@@ -37,9 +37,7 @@ export default function Guides() {
                 />
               </svg>
 
-              <h2 className="mt-4 text-xl font-bold text-black">
-                Productivity
-              </h2>
+              <h2 className="mt-4 text-xl font-bold ">Productivity</h2>
 
               <p className="mt-1 text-sm ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
@@ -48,7 +46,7 @@ export default function Guides() {
               </p>
             </a>
             <a
-              className="block p-8 transition border shadow-xl rounded-xl border-black/10 hover:border-pink-500/10 hover:shadow-cyan/40"
+              className="block p-8 transition border shadow-xl rounded-xl border-black/10 hover:border-pink-500/10 hover:shadow-cyan/40 dark:bg-zinc-800/30 dark:shadow-slate-200/30"
               href="/services/digital-campaigns"
             >
               <svg
@@ -68,9 +66,7 @@ export default function Guides() {
                 />
               </svg>
 
-              <h2 className="mt-4 text-xl font-bold text-black">
-                Productivity
-              </h2>
+              <h2 className="mt-4 text-xl font-bold ">Writing</h2>
 
               <p className="mt-1 text-sm ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
@@ -79,7 +75,7 @@ export default function Guides() {
               </p>
             </a>
             <a
-              className="block p-8 transition border shadow-xl rounded-xl border-black/10 hover:border-pink-500/10 hover:shadow-indigo-500/50"
+              className="block p-8 transition border shadow-xl rounded-xl border-black/10 hover:border-pink-500/10 hover:shadow-indigo-500/50 dark:bg-zinc-800/30 dark:shadow-slate-200/30"
               href="/services/digital-campaigns"
             >
               <svg
@@ -99,9 +95,7 @@ export default function Guides() {
                 />
               </svg>
 
-              <h2 className="mt-4 text-xl font-bold text-black">
-                Productivity
-              </h2>
+              <h2 className="mt-4 text-xl font-bold ">Life Design</h2>
 
               <p className="mt-1 text-sm ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
@@ -114,7 +108,7 @@ export default function Guides() {
           <div className="mt-12 text-center">
             <a
               href="#"
-              className="inline-flex items-center px-8 py-3 mt-8 text-black bg-pink-600 border border-pink-600 rounded hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
+              className="inline-flex items-center px-8 py-3 mt-8 text-black border rounded border-sky-600 bg-sky-600 hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
             >
               <span className="text-sm font-medium text-white">
                 Get Started

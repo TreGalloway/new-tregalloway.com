@@ -1,8 +1,5 @@
 'use client'
 import 'tailwindcss/tailwind.css'
-
-// import RenderResults from 'components/cmd/kbar-results'
-import Navbar from 'components/navbar'
 // import {
 //   KBarAnimator,
 //   KBarPortal,
@@ -13,6 +10,10 @@ import Navbar from 'components/navbar'
 //   NO_GROUP,
 //   useMatches,
 // } from 'kbar'
+import 'superkey/styles.css'
+
+// import RenderResults from 'components/cmd/kbar-results'
+import Navbar from 'components/navbar'
 
 export default function RootLayout({
   children,
@@ -24,7 +25,7 @@ export default function RootLayout({
       <head />
       <div>
         <div className=" className md:container md:mx-auto">
-          <body className="text-black bg-white ">
+          <body className=" dark:bg-zinc-900 dark:text-white">
             <Navbar />
             {children}
           </body>

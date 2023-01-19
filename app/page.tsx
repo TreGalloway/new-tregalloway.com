@@ -1,3 +1,17 @@
+' use client'
+
+import NewsletterForm from '../components/forms/newsletterform'
+import Guides from '../components/sections/guide-section'
+
+export default function Home() {
+  return (
+    <div className="max-w-screen-xl mx-auto sm:py-12 sm:px-6 lg:px-8">
+      <NewsletterForm />
+      <Guides />
+    </div>
+  )
+}
+
 // import IndexPage from 'components/IndexPage'
 // import PreviewIndexPage from 'components/PreviewIndexPage'
 // import { PreviewSuspense } from 'components/PreviewSuspense'
@@ -27,11 +41,3 @@
 
 // // FIXME: remove the `revalidate` export below once you've followed the instructions in `/pages/api/revalidate.ts`
 // export const revalidate = 1
-' use client'
-export default function Home() {
-  return (
-    <div className="md:container md:mx-auto">
-      <div> Hello World from your hero</div>
-    </div>
-  )
-}

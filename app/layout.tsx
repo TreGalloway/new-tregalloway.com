@@ -22,11 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <div className=" md:container md:mx-auto">
-        <body className="text-black bg-white ">
-          <Navbar />
-          {children}
-        </body>
+      <div>
+        <div className=" className md:container md:mx-auto">
+          <body className="text-black bg-white ">
+            <Navbar />
+            {children}
+          </body>
+        </div>
       </div>
     </html>
   )

@@ -39,5 +39,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-cmdk')],
+  plugins: [require('@tailwindcss/forms')],
 }

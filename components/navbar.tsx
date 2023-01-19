@@ -3,9 +3,6 @@ import { IconCommand } from '@tabler/icons'
 import Head from 'next/head'
 import Link from 'next/link'
 
-// import { useState } from 'react'
-import CommandMenu from './cmd/cmd-palette-cmdk'
-import CmdPaletteUI from './cmd/cmd-palette-headlessui'
 import CommandExample from './cmd-pallete'
 
 export default function Navbar() {

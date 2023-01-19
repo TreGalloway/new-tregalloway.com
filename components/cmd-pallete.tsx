@@ -107,7 +107,8 @@ const CommandExample = () => {
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
             setQuery(e.target.value)
           }}
-          inputClassName="outline-0 "
+          inputClassName="outline-0 outline-transparent  "
+          className=""
         />
         <CommandList>
           {filteredData.map((example) => (
